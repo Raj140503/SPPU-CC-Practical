@@ -1,0 +1,31 @@
+public class SimpleCalculator{
+    public static Integer add(Integer num1,Integer num2){
+        return num1 + num2;
+    }
+    public static Integer sub(Integer num1,Integer num2){
+        return num1 - num2;
+    }
+    public static Integer mul(Integer num1,Integer num2){
+        return num1 * num2;
+    }
+    public static Decimal div(Integer num1,Integer num2){
+        if(num2 ==0){
+            System.debug('Division by zero error');
+        }
+        return num1 / num2;
+    }
+    
+}
+
+Usage - 
+
+
+Integer operand1 = 10;
+Integer operand2 = 5;
+
+
+
+System.debug('Addition is : '+ SimpleCalculator.add(operand1,operand2));
+System.debug('Subtraction is : ' +SimpleCalculator.sub(operand1,operand2));
+System.debug('Multiplication is : ' +SimpleCalculator.mul(operand1,operand2));
+System.debug('Division is : '+ SimpleCalculator.div(operand1,operand2));

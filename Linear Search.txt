@@ -1,0 +1,24 @@
+public class LinearSearch{
+    public static Integer search(Integer[] arr,Integer key){
+        for (Integer i=0;i<arr.size();i++){
+            if (arr[i]==key){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+
+Usage - 
+
+Integer[] arr = new Integer[]{10,20,30,43,22};
+Integer key = 43;
+
+Integer result = LinearSearch.search(arr,key);
+
+if(result != -1){
+    System.debug('Key Found at index : ' + result);
+}
+else{
+    System.debug('Key not found!!');
+}

@@ -1,0 +1,28 @@
+public class Student{
+    public String name;
+    public String class_name;
+    public String div;
+    public Integer Roll_no;
+    
+    
+    public Student(String n,String c,String d,Integer r){
+        name =n;
+        class_name = c;
+        div = d;
+        Roll_no = r;
+    }
+    
+    
+    public void display(){
+        System.debug('Student Name : '+ name);
+        System.debug('Class Name : ' + class_name);
+		System.debug('Division : '+ div);
+        System.debug('Roll No : ' + Roll_no);
+    }
+    
+}
+
+Usage - 
+
+Student student1 =new Student('Niraj More','T.E','B',38);
+student1.display();
